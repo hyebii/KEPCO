@@ -28,7 +28,13 @@
                 navigation: true,
                 navigationTooltips: ['Smart Energy', 'News', '소통공간', '고객지원', 'KEPCOPEDIA', '회사정보'],
                 showActiveTooltip: true,
-                menu: '#menu'
+                menu: '#menu',
+
+                //모바일 시 풀페이지-> 스크롤
+                responsiveWidth: 640,
+                afterResponsive: function (isResponsive) {
+                }
+
             });
 
             //헤더 t_gnb 메뉴
@@ -151,7 +157,7 @@
                         slidesPerView: 3,
                         spaceBetween: 40,
                     },
-                    
+
                 },
             });
 
@@ -192,13 +198,13 @@
                     delay: 5000,
                     disableOnInteraction: false,
                 },
-                
+
                 breakpoints: {
-                    0 : {
+                    0: {
                         slidesPerView: 1,
                         //spaceBetween: 12,
                     },
-                    640 : {
+                    640: {
                         slidesPerView: 2,
                         //spaceBetween: 12,
                     },
@@ -490,9 +496,9 @@
                     <p>안전하고 깨끗한 에너지 세상을 만들기 위한<br />
                         한국전력의 노력을 만나실 수 있습니다.</p>
                     <ul>
-                        <li class="on"><a href="#">소셜미디어</a></li>
-                        <li><a href="#">사보</a></li>
-                        <li><a href="#">아이디어공모전</a></li>
+                        <li class="on">소셜미디어</li>
+                        <li>사보</li>
+                        <li>아이디어공모전</li>
                     </ul>
                 </div> <!-- .text end -->
                 <div class="list">

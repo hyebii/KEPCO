@@ -811,9 +811,6 @@ header .m_gnb > ul .depth01 .depth02 li {
         padding: 80px 50px;
     }
 }
-@media all and (max-width: 495px) {
-    
-}
 @media all and (max-width: 414px) {
     #customer .cst_wrap .box_wrap .cst_box ul li {
         padding-right: 40px;
@@ -826,6 +823,11 @@ header .m_gnb > ul .depth01 .depth02 li {
     }
     #customer .cst_wrap .story .item div {
         height: 100%;
+    }
+}
+@media all and (max-width: 375px) {
+    #customer .cst_wrap .story .item figure {
+        height: 41.33vh;
     }
 }
 
